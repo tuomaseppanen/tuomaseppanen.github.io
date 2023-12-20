@@ -1,9 +1,183 @@
+<!DOCTYPE html>
 <html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="java.js" type="text/javascript"></script>
+<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Bebas+Neue&family=Inter+Tight&family=Kanit:wght@300&display=swap" rel="stylesheet">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 400px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body class="w3-black">
 
-<body>
-  <h1>Tuomas Seppänen</h1>
-  <p>Tervetuloa to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
+ 
+    
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav id="nav" class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="padding-top: 50px;" >
+  <button type="button" class="fa fa-bars w3-xlarge" onclick="clickHandler()" style="background-color: #222; color: white;"></button>
+    
+    <script>
+      function clickHandler() {
+        
+        var x = document.getElementById("table");
+  if ("table".style.display === "none") {
+    "table".style.display = "block";
+  } else {
+    "table".style.display = "none";
+  }
+      }
+
+      
+    </script>
+    
+  </a>
+  <a  class=" w3-button w3-bar-item">
+    
+    <p style="font-size: 20px;">ETUSIVU</p>
+  </a>
+  <a  class="w3-bar-item">
+    
+    <p style="font-size: 20px;">ASEMAT</p>
+    <table id="table"class="w3-table w3-bordered">
+        <tr>
+        <th>ASEMAT</th>
+        <th>DIESEL</th>
+        <th>98</th>
+        <th>95</th>
+        </tr>
+        <tr>
+            <td>Shell, Matkakeskus Hannikaisenkatu 20</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ABC, Hannikaisenkatu 6</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ABC, Prisma Keljonkeskus Kylmälahdentie 8</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ABC, Keljonkangas Eteläväylä 17</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ABC, Savela Vehkakatu 3 </td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Esso/ABC, Keljonkangas Eteläväylä 17</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ABC, Vaajakoski Asematie 1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Neste Oil, Savela Vehkakatu 2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ShellExpress, Keljo Pumperinkatu 2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Neste Express, CM Keljonkeskus Kylmälahdentie 6</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Neste Oil Express, Vaajakoski Jyskä Vaajakoskentie 119</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ABC, Vaajakoski, Kanavuori Vaajakoskentie 850</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ABC, Tourula Vapaaherrantie 4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>
+  </a>
+  
+  </a>
+  <a  class="w3-bar-item">
+    
+    <p style="font-size: 20px;">OTA YHTEYTTÄ</p>
+  </a>
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo" style="font-family: Kanit; margin-left: 150px;"><span class="w3-hide-small">Bensakartta</span> </h1>
+  </header>
+
+
+  <div class="w3-center" style="margin-left: 100px;" >
+<iframe width="1200" height="800" style="filter: invert(90%) grayscale(1)" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29726.858346462992!2d25.760245714290527!3d62.24657117509577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfi!2sfi!4v1702717853606!5m2!1sfi!2sfi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+ 
+
+    
+
+   
+    
+    
+
+  
+
+
+
+ 
+
+<!-- END PAGE CONTENT -->
+</div>
+
 </body>
-
 </html>
